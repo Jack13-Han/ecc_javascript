@@ -1,7 +1,7 @@
 const getShiftJudgement =(name,number) => {
     
     let shifuto;
-    if(number < 0){
+    if(number <= 0 ){
          shifuto="エラー：出勤人数を確認してください。"
     } else if(number<=2){
        shifuto= "最小人数で営業中。店長！他の店舗からヘルプを呼んでください！"
