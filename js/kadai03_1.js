@@ -3,6 +3,8 @@ const title =document.getElementById("title")
 const message=document.getElementById("message")
 
 
+message.innerText="Hello"
+
 console.log(title)
 console.log(message)
 
