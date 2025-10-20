@@ -20,7 +20,7 @@ form.addEventListener("submit", (event) => {
 //   console.log("submit");
 
 
-  result.textContent =` 
+  result.innerHTML =` 
     <h1>お名前 :  ${inputName.value} </h1>
       <h4>ご意見 :  ${textName.value}</h4>
   
