@@ -1,0 +1,80 @@
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #fff;
+    color: #111;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: #004070;
+    color: white;
+    padding-inline: clamp(1rem, 4vw, 3rem);
+    font-size: 0.8rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+/* タイトル */
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* ラベルと入力要素のペア */
+form div {
+    margin-bottom: 1rem;
+}
+
+/* ラベルのスタイル */
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+/* テキスト入力・テキストエリアの共通スタイル */
+input[type="text"],
+textarea {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* ボタン */
+button[type="submit"] {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #007acc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #005fa3;
+}
+
+/* 結果表示 */
+output#result {
+    display: block;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    color: #444;
+    white-space: pre-wrap;
+}

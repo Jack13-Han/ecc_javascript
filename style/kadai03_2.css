@@ -1,0 +1,107 @@
+/* -----------------------------
+   kadai03_2：ログインモーダル
+----------------------------- */
+
+#loginBtn {
+  color: #9999ff;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+#loginBtn:hover {
+  opacity: 0.8;
+}
+
+#loginDialog {
+  width: 30%;
+  margin: auto;
+  border: none;
+  border-radius: 0.5em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+#loginDialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#loginWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1.5em;
+  background-color: #fff;
+}
+
+#loginHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8em 1em;
+  background-color: #f0ffba;
+  border-bottom: 1px solid #333;
+}
+
+#loginHeader h2 {
+  font-size: 1em;
+  margin: 0;
+}
+
+#loginHeader button {
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 0.5em;
+  line-height: 1;
+}
+
+#loginWrapper div {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
+#loginWrapper input {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1.1em;
+  border: 1px solid #ccc;
+  border-radius: 0.3em;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#loginWrapper input:focus-visible {
+  border-color: #9999ff;
+}
+
+#loginWrapper div:last-of-type {
+  text-align: center;
+  margin-top: 0.5em;
+  font-size: 0.9em;
+  color: #ff7f7f;
+}
+
+/* ログインボタン */
+#loginWrapper button[type="submit"] {
+  width: 80%;
+  margin: 1em auto 0;
+  padding: 0.6em;
+  font-size: 1.1em;
+  font-weight: bold;
+  background-color: #00ccff;
+  color: black;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#loginWrapper button[type="submit"]:hover {
+  background-color: skyblue;
+  transform: translateY(-1px);
+}

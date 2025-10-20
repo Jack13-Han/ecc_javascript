@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/ECCPizza_top.css">
+  <link rel="stylesheet" href="./css/kadai03_2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>ECC Pizza | TOP</title>
+</head>
+
+<body>
+  <header>
+    <h1>
+      <img src="img/ECCPizza_logo_250_90.png" alt="ロゴ" width="125">
+    </h1>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#">メニュー</a></li>
+        <li><a href="#">店舗情報</a></li>
+        <li><a href="#">ECC Pizza について</a></li>
+        <li>最新ニュース</li>
+        <li>カート</li>
+        <li id="loginBtn">ログイン</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>
+      <img src="./img/main.jpg" alt="ECC Pizza Grand Open">
+    </h2>
+    <div class="about">
+      <div class="about-info">
+        <h3>ECC Pizza について</h3>
+        <p>ECC Pizza は、大阪市北区に本店を構える地域密着型イタリアンです。</p>
+        <a href="#">詳しくはこちら</a>
+      </div>
+    </div>
+    <div class="popular-items">
+      <h3>人気メニュー</h3>
+      <div class="item-wrap">
+        <div class="popular-item">
+          <img src="./img/margherita.jpg" alt="マルゲリータ">
+          <div class="item-info">
+            <a href="#">マルゲリータ</a>
+            <span class="price">¥1,200</span>
+          </div>
+        </div>
+        <div class="popular-item">
+          <img src="./img/pepperoni.jpg" alt="ペパロニ">
+          <div class="item-info">
+            <a href="#">ペパロニ</a>
+            <span class="price">¥1,500</span>
+          </div>
+        </div>
+        <div class="popular-item">
+          <img src="./img/bolognese.jpg" alt="ボロネーゼ">
+          <div class="item-info">
+            <a href="#">ボロネーゼ</a>
+            <span class="price">¥1,200</span>
+          </div>
+        </div>
+        <div class="popular-item">
+          <img src="./img/carbonara.jpg" alt="カルボナーラ">
+          <div class="item-info">
+            <a href="#">カルボナーラ</a>
+            <span class="price">¥1,000</span>
+          </div>
+        </div>
+      </div>
+      <div class="items-link"><a href="#">グランドメニューはこちら</a></div>
+    </div>
+    <div class="news">
+      <h3>最新ニュース</h3>
+      <table>
+        <tbody>
+          <tr>
+            <th>2025/4/1</th>
+            <td><a href="#">ECC Pizza Webサイトリニューアルしました！</a></td>
+          </tr>
+          <tr>
+            <th>2023/3/1</th>
+            <td><a href="#">ECC Pizza 森ノ宮店がオープンしました！</a></td>
+          </tr>
+          <tr>
+            <th>2023/2/1</th>
+            <td><a href="#">ECC Pizza 心斎橋店がオープンしました！</a></td>
+          </tr>
+          <tr>
+            <th>2023/1/1</th>
+            <td><a href="#">ECC Pizza 中崎町店がオープンしました！</a></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2"><a href="#">もっと見る</a></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <div class="scroll-top">
+      <a href="#"><img src="img/top_button.png" width="50" height="50" alt="TOPへ戻る"></a>
+    </div>
+  </main>
+  <footer>
+    <a href="#"><img src="./img/ECCPizza_logo_s.png" alt="ロゴ" width="200"></a>
+    <div class="sns-icons">
+      <a href="#"><img src="./img/twitter.png" alt="twitter" width="32"></a>
+      <a href="#"><img src="./img/facebook.png" alt="facebook" width="32"></a>
+      <a href="#"><img src="./img/instagram.png" alt="instagram" width="32"></a>
+    </div>
+    <p><small>Copyright &copy; 2023 ECC Pizza. All Rights Reserved.</small></p>
+  </footer>
+
+  <dialog id="loginDialog">
+    <div id="loginWrapper">
+      <header id="loginHeader">
+        <h2>ログイン</h2>
+        <button type="button" id="closeBtn" class="material-icons">close</button>
+      </header>
+      <div>
+        <label for="userId">ユーザーID:</label>
+        <input type="text" name="userId" id="userId">
+      </div>
+      <div>
+        <label for="password">パスワード:</label>
+        <input type="password" name="password" id="password">
+      </div>
+      <div><a href="#">新規登録はこちら</a></div>
+      <button type="submit" id="submitBtn">ログイン</button>
+    </div>
+  </dialog>
+  <script src="./js/kadai04_2.js"></script>
+</body>
+
+</html>

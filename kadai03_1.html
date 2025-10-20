@@ -1,17 +1,47 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kadia 3</title>
+  <meta charset="UTF-8">
+  <title>kadai03_1: console.log と dir の違い</title>
+  <link rel="stylesheet" href="style/kadai03_1.css">
 </head>
+
 <body>
+
+  <header>Webサイト制作（フロントエンドⅡ）</header>
+
+  <main>
     <h1 id="title">DOMってなに？</h1>
-    <p id="message">
-        このぺーじは
-    </p>
+    <p id="message">このページの構造を調べてみよう。</p>
 
+    
+    <button id="showBtn">開発者ツールで確認する</button>
 
-    <script src="js/kadai03_1.js"></script>
+    <button id="modalBtn">モーダルで表示する</button>
+
+    <dialog id="infoDialog">
+      <button id="closeBtn">
+        <span>✕</span>
+      </button>
+
+      <div id="dialogContent">
+        <h2><strong>console.log() と console.dir() の違い</strong></h2>
+        <p><code>console.log()</code> は、値や文字列を読みやすく出力するためのものです。</p>
+        <p><code>console.dir()</code> は、オブジェクトのプロパティ構造を階層で表示するために使います。</p>
+
+        <p><strong>例：<code>title.textContent</code> を出力した場合</strong></p>
+        <ul>
+          <li><code>console.log(title.textContent)</code> → 文字列をそのまま表示</li>
+          <li><code>console.dir(title.textContent)</code> → <strong>String</strong> オブジェクトの構造を表示</li>
+        </ul>
+      </div>
+
+      
+    </dialog>
+  </main>
+
+  <script src="js/kadai03_1.js"></script>
 </body>
+
 </html>

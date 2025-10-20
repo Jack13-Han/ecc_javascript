@@ -1,0 +1,248 @@
+/* ====================
+   全体共通設定
+==================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  border: none;
+  display: block;
+  max-width: 100%;
+}
+
+/* ====================
+   リンクスタイル
+==================== */
+a {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:link {
+  color: #9999ff;
+}
+
+a:visited {
+  color: #ff7f7f;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+/* ====================
+   ヘッダー
+==================== */
+header {
+  background-color: #f0ffba;
+  padding: 0.8em 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+h1 {
+  margin: 0;
+}
+
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2em;
+  font-weight: bold;
+}
+
+/* ====================
+   メイン全体
+==================== */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 1em;
+}
+
+/* ====================
+   セクション見出し
+==================== */
+h2 img {
+  width: 100%;
+  height: auto;
+}
+
+h3 {
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+/* ====================
+   Aboutセクション
+==================== */
+.about {
+  background-image: url("../img/about.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 450px;
+  margin-block: 2em;
+}
+
+.about-info {
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 2em;
+  text-align: center;
+}
+
+.about-info a {
+  display: inline-block;
+  font-size: 0.8em;
+  transition: transform 0.2s ease;
+}
+
+.about-info a:hover {
+  transform: scale(1.1);
+}
+
+/* ====================
+   人気メニュー
+==================== */
+.popular-items {
+  margin-block: 2em;
+  padding-inline: 0.5em;
+}
+
+.popular-items h3 {
+  border-bottom: 2px solid red;
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
+}
+
+.item-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5em;
+}
+
+.popular-item {
+  font-size: 1.1em;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.5em;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8em;
+  font-weight: bold;
+}
+
+.price {
+  color: #333;
+}
+
+.items-link {
+  text-align: right;
+  margin-top: 1em;
+  font-size: 0.95em;
+}
+
+/* ====================
+   ニュース
+==================== */
+.news {
+  margin-block: 2em;
+}
+
+.news h3 {
+  border-bottom: 2px solid red;
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
+}
+
+.news table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.news th,
+.news td {
+  padding: 0.8em 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.news tfoot {
+  text-align: center;
+  padding-top: 1em;
+}
+
+/* ====================
+   トップへ戻るボタン
+==================== */
+.scroll-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 100;
+  transition: transform 0.2s;
+}
+
+.scroll-top:hover {
+  transform: scale(1.1);
+}
+
+/* ====================
+   フッター
+==================== */
+footer {
+  background-color: #f0ffba;
+  text-align: center;
+  padding: 2em 0;
+}
+
+footer > a {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+
+.sns-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.sns-icons img {
+  width: 32px;
+  height: 32px;
+}
+
+footer p {
+  font-size: 0.85em;
+}

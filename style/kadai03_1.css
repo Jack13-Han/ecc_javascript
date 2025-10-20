@@ -1,0 +1,97 @@
+/* ベーススタイル */
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #fff;
+  color: #111;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #004070;
+  color: white;
+  padding-block: 0.5rem;
+  padding-inline: clamp(1rem, 4vw, 3rem);
+  font-size: 0.8rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+button {
+  margin: 0.5rem;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  background-color: #6d6d6d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+/* dialog 要素のスタイル */
+dialog {
+  position: relative;
+  width: 60%;
+  border: none;
+  border-radius: 0.5em;
+  padding: 2rem 2rem 1.5rem 2rem;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  background: #fff;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  overflow: visible;
+}
+
+/* dialog 内のコンテンツエリア */
+#dialogContent {
+  margin-top: 2rem;
+}
+
+#dialogContent p {
+  margin: 0.7em 0;
+}
+
+#dialogContent ul {
+  list-style: none;
+  padding: 0;
+  margin: 1.2em 0;
+}
+
+#dialogContent li {
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+#closeBtn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  transform: translate(75%, -75%);
+  width: 3rem;
+  height: 3rem;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  padding: 0;
+}
