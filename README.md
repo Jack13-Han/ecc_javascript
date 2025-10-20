@@ -12,5 +12,7 @@
 
 #### ဒီနေရာမှာ ကျွန်တော့် GitHub ထဲ ရောက်ပြီး ဆက်သွယ်ချင်တယ်ဆိုရင်တော့ ဒီ လင့်ကနေ ကျွန်တော့် Facebook ကနေ ဆက်သွယ်လာနိုင်ပါတယ် 
 
-####  **[Han Wai Htun](https://www.facebook.com/hanwaihtun1e/)**.
+
+### :point_down:
+####  :point_right: **[Han Wai Htun](https://www.facebook.com/hanwaihtun1e/)** :point_left: :cd: 
 
