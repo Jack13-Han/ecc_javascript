@@ -19,10 +19,15 @@ form.addEventListener("submit", (event) => {
 //   console.log(textName.value);
 //   console.log("submit");
 
+    const name = inputName.value;
+    const text =textName.value;
+
+    // result.textContent = ` お名前 : ${name}\nご意見: ${text}`
+
 
   result.innerHTML =` 
-    <h1>お名前 :  ${inputName.value} </h1>
-      <h4>ご意見 :  ${textName.value}</h4>
+    <h1>お名前 :  ${name} </h1>
+      <h4>ご意見 :  ${text}</h4>
   
   ` ;
 

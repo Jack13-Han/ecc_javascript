@@ -14,20 +14,29 @@ const openLoginDialog =() => {
 }
 
 
-const closeLoginDialog =() => {
+const closeLoginDialog = () => {
     console.log("close login")
     loginDialog.close();
 }
 
 
+const handleOutsideClick =(event) => {
+    if(event.target === loginDialog){
+    loginDialog.close();
 
-const events =["click","blur"]
+    }
+}
+// const events =["click",]
 
 
 //action
 
 loginBtn.addEventListener("click",openLoginDialog)
-events.forEach((event) => {
-    closeBtn.addEventListener(event,closeLoginDialog)
-})
+closeBtn.addEventListener("click",closeLoginDialog)
+loginDialog.addEventListener("click",handleOutsideClick)
+
+
+// events.forEach((event) => {
+//     closeBtn.addEventListener(event,closeLoginDialog)
+// })
 
