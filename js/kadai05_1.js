@@ -71,7 +71,6 @@ for(let i = 0;i < reviews.length;i++){
 }
 
 for (const element of reviews) {
-    
     const el = createReviewElement(element);
     voiceForOf.appendChild(el)
 }
@@ -80,3 +79,14 @@ reviews.forEach(element => {
     const el =createReviewElement(element)
     voiceForEach.appendChild(el)
 });
+
+
+console.log("=== review [0] の　中身 For in")
+
+for (const key in reviews) {
+    // if (!Object.hasOwn(reviews, key)) continue;
+    
+    const element = reviews[key];
+    console.log(createReviewElement(element))   
+}
+
