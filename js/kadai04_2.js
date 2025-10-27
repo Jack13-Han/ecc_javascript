@@ -33,7 +33,6 @@ const handleOutsideClick =(event) => {
 
 loginBtn.addEventListener("click",openLoginDialog)
 closeBtn.addEventListener("click",closeLoginDialog)
-loginDialog.addEventListener("click",handleOutsideClick)
 
 
 // events.forEach((event) => {
